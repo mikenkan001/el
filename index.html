@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El-hakavod Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brown: #8B4513;
+      --light-brown: #D2B48C;
+    }
+  </style>
+</head>
+<body class="bg-white text-black font-sans">
+  <!-- Navigation -->
+  <nav class="bg-black text-white p-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://i.ibb.co/QjdcFhfF/IMG-20250816-WA0014.jpg" alt="El-hakavod Consulting Logo" class="h-12 mr-4">
+        <h1 class="text-2xl font-bold">El-hakavod Consulting</h1>
+      </div>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-[var(--light-brown)]">Home</a></li>
+        <li><a href="#about" class="hover:text-[var(--light-brown)]">About</a></li>
+        <li><a href="#brochure" class="hover:text-[var(--light-brown)]">Training Plans</a></li>
+        <li><a href="#book" class="hover:text-[var(--light-brown)]">Buy Book</a></li>
+        <li><a href="#events" class="hover:text-[var(--light-brown)]">Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="bg-[var(--brown)] text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to El-hakavod Consulting</h2>
+      <p class="text-lg mb-6">Your Trusted Partner in Decentralized Finance</p>
+      <p class="max-w-2xl mx-auto">We are committed to imparting high-income crypto trading knowledge and developing secure DeFi-asset investments for maximum profitability.</p>
+      <a href="#brochure" class="mt-6 inline-block bg-[var(--light-brown)] text-black px-6 py-3 rounded hover:bg-white">Explore Our Training Plans</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-6 md:mb-0">
+          <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+          <p class="text-lg">To train and build profitable crypto traders and investors in decentralized finance, empowering individuals with the knowledge and tools to succeed in the DeFi space.</p>
+          <h3 class="text-2xl font-semibold mt-6 mb-4">Our Offices</h3>
+          <p><strong>Uyo:</strong> 27 Nung Ekan by Osong Oma, Four Lane</p>
+          <p><strong>Port Harcourt:</strong> 7 Power Eke by Transamadi, Woji</p>
+        </div>
+        <div class="md:w-1/2">
+          <div class="bg-[var(--light-brown)] p-6 rounded-lg text-center">
+            <p class="text-lg italic">"Empowering Wealth Creation Through Decentralized Finance"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brochure Section -->
+  <section id="brochure" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Training Plans</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Basic Class -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Basic Class - ₦70,000</h3>
+          <p class="mb-4">Learn the fundamentals of cryptocurrency trading and investment.</p>
+          <ul class="list-disc pl-6 mb-6">
+            <li>Introduction to Cryptocurrency</li>
+            <li>Blockchain Breakdown</li>
+            <li>Storage Systems for Cryptocurrency</li>
+            <li>Fundamental Analysis</li>
+            <li>Tokenomics</li>
+            <li>Introduction to Technical Analysis</li>
+            <li>Introduction to Trading (CEX)</li>
+            <li>Spot Trading</li>
+            <li>Derivative Trading/Futures/Perpetual (Theory)</li>
+            <li>P2P Trading</li>
+          </ul>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)]" onclick="alert('Contact us to enroll!')">Enroll Now</button>
+        </div>
+        <!-- Advanced Class -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-4">Advanced Class - $100</h3>
+          <p class="mb-4">Master decentralized exchange (DEX) trading and advanced DeFi strategies.</p>
+          <ul class="list-disc pl-6 mb-6">
+            <li>Introduction to DEX Trading</li>
+            <li>Bot Tools for DEX Trading</li>
+            <li>Scalping for DEX Trading</li>
+            <li>Introduction to Technical Analysis (TA)</li>
+            <li>Bonding Curve Analysis for DEX Trading</li>
+            <li>Spot Analysis for DEX Trading</li>
+            <li>Testnet/DEPIN Finance</li>
+            <li>Staking</li>
+            <li>ICO/IDO/Presale/Launchpool</li>
+          </ul>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)]" onclick="alert('Contact us to enroll!')">Enroll Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Purchase Section -->
+  <section id="book" class="py-20 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Purchase Our Book</h2>
+      <p class="text-lg mb-6">Get our comprehensive guide to decentralized finance and crypto trading, available in physical or e-copy formats.</p>
+      <div class="flex justify-center space-x-6">
+        <div class="bg-[var(--light-brown)] p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">Physical Copy</h3>
+          <p class="mb-4">Price: $29.99</p>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-black" onclick="alert('Purchase processing...')">Buy Now</button>
+        </div>
+        <div class="bg-[var(--light-brown)] p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-2">E-Copy</h3>
+          <p class="mb-4">Price: $19.99</p>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-black" onclick="alert('Purchase processing...')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Upcoming Events</h2>
+      <p class="text-lg text-center mb-6">Join our workshops, webinars, and training sessions to enhance your DeFi knowledge.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Crypto Trading Webinar</h3>
+          <p class="mb-2"><strong>Date:</strong> TBD</p>
+          <p class="mb-4">Learn the basics of crypto trading in this free online webinar.</p>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)]" onclick="alert('Register for updates!')">Register</button>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Advanced DEX Workshop</h3>
+          <p class="mb-2"><strong>Date:</strong> TBD</p>
+          <p class="mb-4">Dive into decentralized exchange trading strategies.</p>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)]" onclick="alert('Register for updates!')">Register</button>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">DeFi Investment Seminar</h3>
+          <p class="mb-2"><strong>Date:</strong> TBD</p>
+          <p class="mb-4">Explore investment opportunities in DeFi with our experts.</p>
+          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)]" onclick="alert('Register for updates!')">Register</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 El-hakavod Consulting. All rights reserved.</p>
+      <p class="mt-2">Contact us: info@elhakavodconsulting.com</p>
+    </div>
+  </footer>
+</body>
+</html>

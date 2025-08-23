@@ -97,6 +97,16 @@
         height: 48px;
       }
     }
+    /* Marquee animation for About Us */
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body class="bg-white text-black font-sans">
@@ -118,7 +128,7 @@
         <li><a href="#brochure" class="nav-link hover:text-[var(--light-brown)] text-sm sm:text-base">Training Plans</a></li>
         <li><a href="#book" class="nav-link hover:text-[var(--light-brown)] text-sm sm:text-base">Buy Book</a></li>
         <li><a href="https://elhakavod.wordpress.com" target="_blank" class="nav-link hover:text-[var(--light-brown)] text-sm sm:text-base">Events</a></li>
-        <li><a href="#contact" class="nav-link hover:text-[var(--light-brown)] text-sm sm:text-base">Contact</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-[var(--light-brown)] text-sm sm:text-base">Contact</a></li>
       </ul>
     </div>
     <!-- Mobile Menu -->
@@ -129,7 +139,7 @@
         <li><a href="#brochure" class="nav-link hover:text-[var(--light-brown)] text-base">Training Plans</a></li>
         <li><a href="#book" class="nav-link hover:text-[var(--light-brown)] text-base">Buy Book</a></li>
         <li><a href="https://elhakavod.wordpress.com" target="_blank" class="nav-link hover:text-[var(--light-brown)] text-base">Events</a></li>
-        <li><a href="#contact" class="nav-link hover:text-[var(--light-brown)] text-base">Contact</a></li>
+        <li><a href="contact.html" class="nav-link hover:text-[var(--light-brown)] text-base">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -147,16 +157,29 @@
   <!-- About Section -->
   <section id="about" class="py-12 sm:py-16 md:py-20 bg-white animate-section">
     <div class="container mx-auto px-4 sm:px-6">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">About Us</h2>
+      <div class="overflow-hidden">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 marquee">About Us</h2>
+      </div>
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 mb-6 md:mb-0">
-          <h3 class="text-xl sm:text-2xl font-semibold mb-4">Our Mission</h3>
+          <h3 class="text-xl sm:text-2xl font-semibold mb-4 flex items-center">
+            <svg class="w-6 h-6 mr-2 text-[var(--brown)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 2c-2.761 0-5 2.239-5 5h10c0-2.761-2.239-5-5-5z"></path>
+            </svg>
+            Our Mission
+          </h3>
           <p class="text-sm sm:text-base md:text-lg">To train and build profitable crypto traders and investors in decentralized finance, empowering individuals with the knowledge and tools to succeed in the DeFi space.</p>
-          <h3 class="text-xl sm:text-2xl font-semibold mt-6 mb-4">Our Offices</h3>
+          <h3 class="text-xl sm:text-2xl font-semibold mt-6 mb-4 flex items-center">
+            <svg class="w-6 h-6 mr-2 text-[var(--brown)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path>
+            </svg>
+            Our Offices
+          </h3>
           <p class="text-sm sm:text-base"><strong>Uyo:</strong> 27 Nung Ekan by Osong Oma, Four Lane</p>
           <p class="text-sm sm:text-base"><strong>Port Harcourt:</strong> 7 Power Eke by Transamadi, Woji</p>
         </div>
         <div class="md:w-1/2">
+          <img src="https://i.postimg.cc/k5yVqKW1/shubham-dhage-Z-bxe4q-XXMg-unsplash.jpg" alt="DeFi Image" class="w-full h-auto rounded-lg mb-4">
           <div class="bg-[var(--light-brown)] p-4 sm:p-6 rounded-lg text-center animate-card">
             <p class="text-sm sm:text-base md:text-lg italic">"Empowering Wealth Creation Through Decentralized Finance"</p>
           </div>
@@ -171,7 +194,7 @@
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Training Plans</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         <!-- Basic Class -->
-        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg animate-card">
+        <div class="bg-[var(--brown)] text-white p-4 sm:p-6 rounded-lg shadow-lg animate-card">
           <h3 class="text-xl sm:text-2xl font-semibold mb-4">Basic Class - ₦70,000</h3>
           <p class="mb-4 text-sm sm:text-base">Learn the fundamentals of cryptocurrency trading and investment.</p>
           <ul class="list-disc pl-6 mb-6 text-sm sm:text-base">
@@ -186,10 +209,10 @@
             <li>Derivative Trading/Futures/Perpetual (Theory)</li>
             <li>P2P Trading</li>
           </ul>
-          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)] text-sm sm:text-base btn-transition">Enroll Now</button>
+          <button class="bg-[var(--light-brown)] text-black px-4 py-2 rounded hover:bg-white text-sm sm:text-base btn-transition">Enroll Now</button>
         </div>
         <!-- Advanced Class -->
-        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg animate-card">
+        <div class="bg-[var(--brown)] text-white p-4 sm:p-6 rounded-lg shadow-lg animate-card">
           <h3 class="text-xl sm:text-2xl font-semibold mb-4">Advanced Class - $100</h3>
           <p class="mb-4 text-sm sm:text-base">Master decentralized exchange (DEX) trading and advanced DeFi strategies.</p>
           <ul class="list-disc pl-6 mb-6 text-sm sm:text-base">
@@ -203,7 +226,7 @@
             <li>Staking</li>
             <li>ICO/IDO/Presale/Launchpool</li>
           </ul>
-          <button class="bg-[var(--brown)] text-white px-4 py-2 rounded hover:bg-[var(--light-brown)] text-sm sm:text-base btn-transition">Enroll Now</button>
+          <button class="bg-[var(--light-brown)] text-black px-4 py-2 rounded hover:bg-white text-sm sm:text-base btn-transition">Enroll Now</button>
         </div>
       </div>
     </div>
@@ -229,22 +252,11 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-12 sm:py-16 md:py-20 bg-gray-100 animate-section">
-    <div class="container mx-auto px-4 sm:px-6">
-      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8">Contact Us</h2>
-      <p class="text-sm sm:text-base md:text-lg text-center mb-6">Reach out to us for inquiries about our training plans, book purchases, or any other questions.</p>
-      <div class="max-w-lg mx-auto bg-white p-4 sm:p-6 rounded-lg shadow-lg animate-card text-center">
-        <a href="mailto:info@elhakavodconsulting.com?subject=Contact%20Inquiry" class="inline-block bg-[var(--brown)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded hover:bg-[var(--light-brown)] text-sm sm:text-base btn-transition">Send Us an Email</a>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer class="bg-black text-white py-6 animate-section">
     <div class="container mx-auto text-center px-4 sm:px-6">
       <p class="text-sm sm:text-base">&copy; 2025 El-hakavod Consulting. All rights reserved.</p>
-      <p class="mt-2 text-sm sm:text-base">Contact us: info@elhakavodconsulting.com</p>
+      <p class="mt-2 text-sm sm:text-base">Contact us: <a href="mailto:info@elhakavodconsulting.com">info@elhakavodconsulting.com</a></p>
     </div>
   </footer>
 
@@ -271,3 +283,5 @@
       observer.observe(section);
     });
   </script>
+</body>
+                                                                                                                                         </html>
